@@ -1,0 +1,71 @@
+#listContainer{
+	max-width: 1000px;
+	font-family: verdana;
+	margin: auto;
+	margin-top: 30px;
+}
+
+.group-name {
+	font-size: 24px;
+	padding-bottom: 20px;
+	display: block;
+	line-height: 120%;
+	}
+	
+#expList li .post-header, #expList li .comment-header {
+	color: #7c7c7c;
+	padding-bottom: 10px;
+	}
+
+.post-text, .comment-text {
+	text-align: justify;
+	}
+	
+.url a {
+	text-decoration: none;
+	color: #ff988b;
+	}
+
+.url :hover {
+	color: black
+	}
+	
+.commment-amount {
+	display: block;
+	padding-bottom: 10px;
+	}
+	
+#expList li {
+    list-style: none;
+    margin:0;
+    padding:0;
+    cursor: pointer;
+	background-image: url(images/red-cross.png);
+    line-height:140%;
+    text-indent:0px;
+    background-position: 1px 8px;
+    padding-left: 20px;
+    background-repeat: no-repeat;
+	color: #ff988b;
+}
+
+#expList li .post-text, #expList li .comment-text, #expList li .url, #expList li .post-time, #expList li .comment-time {
+	color: black
+	}
+	
+#expList li .comment-time {
+	padding-bottom: 10px;
+	}
+
+/* Collapsed state for list element */
+#expList .collapsed {
+    background-image: url(images/collapsed.png);
+	color: black
+}
+
+/* Expanded state for list element
+/* NOTE: This class must be located UNDER the collapsed one */
+#expList .expanded {
+    background-image: url(images/expanded.png);
+	bolor: black
+}
