@@ -12,8 +12,7 @@ Steps to get the script to work as desired:
    
 3. In the linkedin_scrape.py file, add your API settings retrieved from https://www.linkedin.com/secure/developer in line 28-31.
    
-4. In the linkedin_scrape.py file, set the timeframe for the scrape. You do this by modifying the 'time_to_scrape' variable (line 19).
-   You can use the variables set in line 13-17 for easy calculation, or make your own (e.g. 'last_week' returns posts created during the past week).
+4. In the linkedin_scrape.py file, set the timeframe for the scrape. You do this by modifying the 'time_to_scrape' variable (line 19). You can use the variables set in line 13-17 for easy calculation, or make your own (e.g. 'last_week' returns posts created during the past week).
    Tip if you want to set your own timeframe: Linkedin uses Unix time expressed in milliseconds.
    E.g. one hour = 3600000 for Linkedin, so you can count backwards from the current time like that.
    
@@ -23,6 +22,6 @@ Steps to get the script to work as desired:
      (this returns posts created up to three months before the set date, but on which a discussion has continued since then).
    In the case of a: set 'date_of_comments' (line 18) to False. In the case of b: set 'date_of_comments' to True.
    
-6. Run the script and watch the magic happen!
+6. Run the script and watch the magic happen! If you downloaded the entire repository and ran the script from there, you will get a new html file in the folder that calls a style.css file and uses json to make the output readable.
 
-Any improvements/comments/death threats are more than welcome!
+Any improvements/comments/insults are more than welcome!
